@@ -15,3 +15,7 @@ An algorithmic SVG vector normalizer and icon set builder. Generates cohesive, m
 ## Instructions
 
 See [INSTRUCTIONS.md](./INSTRUCTIONS.md) for CLI commands and normalization parameters.
+
+## License
+
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0) - see the [LICENSE](./LICENSE) file for details.
