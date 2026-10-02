@@ -1,0 +1,48 @@
+HOW TO USE: design-kit-icon-pack-builder
+======================================
+
+PURPOSE
+  Generates cohesive, mathematically normalized 24x24 SVG icon packs matching
+  the exact visual tokens (stroke weight, caps, corners, and colors) of any
+  design kit or template (808 Programmer, Braun Functionalist, Avionics HUD, etc.).
+
+CAPABILITIES
+  - 40+ built-in vector icons across UI navigation and audio/DAW controls
+  - Automatically matches design kit stroke-width, line caps, and color tokens
+  - Exports standalone .svg files in a dedicated svg/ folder
+  - Compiles an icons-sprite.svg sheet for clean single-file embedding
+  - Generates ready-to-use React icon components (Icons.jsx)
+  - Creates an interactive preview.html with 1-click SVG copy-to-clipboard
+
+USE CASES
+  - You are building a web or desktop app and need a complete set of matching icons
+  - You want hardware/DAW controls (Play, Record, Waveform, Sliders) styled for an 808 or synth UI
+  - You need a visual icon gallery to inspect all icons rendered in your design kit theme
+
+IDEAS
+  - Generate specialized icon sets for hardware emulators (drum machines, synthesizers)
+  - Bundle newly generated icons into a single SVG sprite sheet using svg-sprite-generator
+  - Animate key action icons (radar, scan, play) with canvas-svg-animator
+
+PROMPTS YOU CAN PASTE
+  Generate an icon pack for my classic-808-programmer theme.
+
+  Make me an audio transport icon pack styled like avionics-flight-hud.
+
+  Create a set of UI navigation icons matching braun-dieter-rams.
+
+  Build an icon pack with only audio controls: play, pause, record, waveform, sliders.
+
+EXAMPLE FLOW
+  You:   Generate an icon pack for my 808 drum machine theme.
+  Model: [Generates 40 icons in ./generated-icon-pack]
+         - Standalone SVGs: ./generated-icon-pack/svg/
+         - SVG Sprite: ./generated-icon-pack/icons-sprite.svg
+         - React Components: ./generated-icon-pack/Icons.jsx
+         - Visual Preview: ./generated-icon-pack/preview.html
+
+DEFAULT GOALS IF YOU DON'T NAME ONE
+  1. Detect the target design kit or fallback to clean modern defaults
+  2. Normalize stroke weight, caps, joins, and accent colors to kit tokens
+  3. Generate standalone SVG files, SVG sprite sheet, and React icon components
+  4. Build an interactive HTML preview gallery with copyable SVG snippets
